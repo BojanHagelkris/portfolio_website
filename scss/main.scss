@@ -64,9 +64,17 @@ img { width:100% }
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
+@keyframes image1 {
+  0% {
+    transform:translateX(1000px)
+  } 100% {
+    transform: translateX(0);
+  }
+}
 // Header 
 #header {
   &-home {
+   
     // Header Home
       background: $bg-image no-repeat center left/cover;
       height: 100vh;
@@ -82,9 +90,16 @@ img { width:100% }
       h1  {
         font-size: 4rem;
         line-height: 1.2;
+        text-shadow: 0 1px black;
+      }
+      p {
+        text-shadow: 1px 1px 2px black;
+        font-weight: 400;
       }
     }
+
   }
+  
 
 
   // Header Inner
@@ -100,6 +115,9 @@ img { width:100% }
     border-bottom: 3px solid $main-color;
   }
 }
+// Bojan Image
+
+
 
 // Home Sections 
 #home {
